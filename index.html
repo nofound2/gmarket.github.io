@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - VanityMarket</title>
+    <!-- Dodaj link do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styl dla paska "O nas" */
+        .pasek-onas {
+            background-color: gray;
+            padding: 10px;
+            width: 100px;
+            text-align: center;
+            cursor: pointer;
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: width 0.3s;
+        }
+
+        /* Styl dla napisu na pasku */
+        .napis-onas {
+            color: white;
+        }
+
+        /* Styl dla pasku po najechaniu */
+        .pasek-onas:hover {
+            width: 150px;
+        }
+
+        /* Styl dla napisu na pasku po najechaniu */
+        .pasek-onas:hover .napis-onas {
+            display: none;
+        }
+
+        /* Styl dla napisu "Cześć!" na pasku po najechaniu */
+        .pasek-onas:hover::after {
+            content: "VanityMarket - Najlepsze ceny na rynku!";
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://media.discordapp.net/attachments/1121176057488347210/1157662708934651944/vanity-removebg-preview.png?ex=65196cea&is=65181b6a&hm=2fbc895b2e4e8ea4dfd65dd706d28fb616382fe99a11e6f7c910e71fc5bd9f38&=" alt="Logo">
+        <div class="tabs">
+            <div class="pasek-onas"><span class="napis-onas">O Nas</span></div>
+        </div>
+    </header>
+    <div class="center-button">
+        <a href="link-do-strony-tool" class="tool-button">Nitro Gen + Checker</a>
+    </div>
+    <footer>
+        <a href="https://discord.gg/k6Epc7q5jn" class="discord-button">Discord</a>
+        <a href="link-do-twojego-youtube" class="youtube-button">YouTube</a>
+        <a href="nofound2115@gmail.com" class="donate-button">Donate</a>
+    </footer>
+</body>
+</html>
